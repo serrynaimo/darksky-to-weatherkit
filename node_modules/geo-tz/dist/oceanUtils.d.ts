@@ -1,0 +1,14 @@
+type OceanZone = {
+    left: number;
+    right: number;
+    tzid: string;
+};
+export declare const oceanZones: OceanZone[];
+/**
+ * Find the Etc/GMT* timezone name(s) corresponding to the given longitue.
+ *
+ * @param lon The longitude to analyze
+ * @returns An array of strings of TZIDs
+ */
+export declare function getTimezoneAtSea(lon: number): string[];
+export {};

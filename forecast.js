@@ -75,6 +75,7 @@ export default async function Forecast (req, res) {
     res.status(500).end()
   }
 }
+
 // Convert WeatherKit response to DarkSky response format (only hourly)
 export function weatherKitToDarkSkyHourly (json, timezone, offset) {
   return {
